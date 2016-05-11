@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("fonts/Raleway-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("fonts/Raleway-Bold.ttf") format("truetype"); }
+/* line 18, site.css.sass */
+body {
+  background: url("../images/background/climbing-1148883.jpg") no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Raleway-Light";
+  color: white;
+  margin: 0; }
+  /* line 28, site.css.sass */
+  body h1 {
+    font-size: 1.7rem;
+    font-family: "Raleway-Bold"; }
+  /* line 31, site.css.sass */
+  body h2 {
+    font-size: 1.2rem; }
+  /* line 34, site.css.sass */
+  body ul {
+    list-style-type: none; }
+  /* line 36, site.css.sass */
+  body a {
+    color: white;
+    text-decoration: none;
+    position: relative; }
+    /* line 41, site.css.sass */
+    body a:hover {
+      color: white; }
+    /* line 44, site.css.sass */
+    body a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background: white;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s; }
+    /* line 56, site.css.sass */
+    body a:hover:before {
+      visibility: visible;
+      transform: scaleX(1); }
+
+/* line 60, site.css.sass */
+.content {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-15%, -50%); }
+
+/* line 66, site.css.sass */
+.head {
+  text-align: center; }
+  /* line 68, site.css.sass */
+  .head span {
+    margin-left: 1em; }
+
+/* line 71, site.css.sass */
+#about {
+  height: 100vh; }
+  /* line 74, site.css.sass */
+  #about .content {
+    white-space: nowrap; }
+    /* line 76, site.css.sass */
+    #about .content > div {
+      display: inline-block;
+      white-space: normal;
+      width: 50%; }
+  /* line 81, site.css.sass */
+  #about .picture {
+    height: inherit; }
+  /* line 84, site.css.sass */
+  #about img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%; }
+
+/* line 91, site.css.sass */
+#experiences {
+  margin-top: 7rem; }
+  /* line 94, site.css.sass */
+  #experiences .group + .group {
+    margin-top: 3rem; }
+  /* line 97, site.css.sass */
+  #experiences .group {
+    padding: 3rem 1rem 15rem 1rem;
+    transform: skewY(6deg); }
+    /* line 102, site.css.sass */
+    #experiences .group:first-child {
+      background: #767D92; }
+    /* line 105, site.css.sass */
+    #experiences .group:nth-child(2) {
+      background: #768C92; }
+    /* line 108, site.css.sass */
+    #experiences .group h3, #experiences .group h4 {
+      display: inline; }
+    /* line 111, site.css.sass */
+    #experiences .group .right, #experiences .group .left {
+      transform: skewY(-6deg);
+      width: 60%; }
+    /* line 116, site.css.sass */
+    #experiences .group .left h3 {
+      padding-right: 2rem; }
+    /* line 119, site.css.sass */
+    #experiences .group .right {
+      float: right;
+      text-align: right; }
+      /* line 123, site.css.sass */
+      #experiences .group .right h3 {
+        padding-right: 2rem; }
+
+/* line 127, site.css.sass */
+#more {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7)); }
+  /* line 133, site.css.sass */
+  #more .centered {
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 680px) {
+  /* line 144, site.css.sass */
+  #about .content > div {
+    display: block;
+    width: 100%; } }
